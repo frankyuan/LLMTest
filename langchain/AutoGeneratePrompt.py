@@ -7,15 +7,6 @@ MAX_TRY = 10 # Just try 10 times to generate prompt
 model = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
 graph = MessageGraph()
 
-# Test if graph worked
-# graph.add_node("oracle", model)
-# graph.add_edge("oracle", END)
-#
-# graph.set_entry_point("oracle")
-#
-# runnable = graph.compile()
-# result = runnable.invoke(HumanMessage(content="What is the meaning of life?"))
-# print(result)
 
 def generate_prompt():
     pass
